@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Study Buddy</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+   <button id="theme">🌙 Dark Mode</button>
+    <main>
+      <h1>
+  <svg class="robot-icon" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+    <rect x="5" y="8" width="14" height="12" rx="2" fill="#aa3bff"/>
+    <circle cx="9" cy="13" r="1.5" fill="white"/>
+    <circle cx="15" cy="13" r="1.5" fill="white"/>
+    <rect x="9" y="17" width="6" height="1.5" rx="0.75" fill="white"/>
+    <line x1="12" y1="8" x2="12" y2="4" stroke="#aa3bff" stroke-width="2"/>
+    <circle cx="12" cy="3" r="1.5" fill="#aa3bff"/>
+    <rect x="2" y="11" width="2" height="4" rx="1" fill="#aa3bff"/>
+    <rect x="20" y="11" width="2" height="4" rx="1" fill="#aa3bff"/>
+  </svg>
+  AI Study Buddy
+</h1>
+      <p>Paste your notes below and generate flashcards to study smarter.</p>
+
+      <section>
+  <textarea id="notesInput" placeholder="Paste your study notes or a topic name here (not instructions)..."></textarea>
+  
+  <div class="btn-group">
+    <button id="generateBtn"> Generate Flashcards 📝</button>
+    <button id="generateQuizBtn"> Generate Quiz 🧠</button>
+  </div>
+
+  <p id="loadingMsg" style="display: none;">
+    Generating
+    <span class="dot">.</span>
+    <span class="dot">.</span>
+    <span class="dot">.</span>
+  </p>
+  <p id="errorMsg" style="display: none; color: #ff6b6b;"></p>
+</section>
+
+<section id="cardContainer"></section>
+<p id="welcomeMsg" class="welcome-msg">👋 Paste your notes above and hit Generate to get started!</p>
+<section id="quizSection" style="display:none;">
+  <div id="progressBar">
+    <div id="progressFill"></div>
+  </div>
+  <p id="questionCounter"></p>
+  <div id="quizContainer"></div>
+  <p id="quizError" style="display:none; color:#ff6b6b;">Please select an option first!</p>
+</section>
+<section id="history">
+  <div class="history-header">
+    <h2>📚 Quiz History</h2>
+    <button id="historyCloseBtn" aria-label="Close history">✕</button>
+  </div>
+  <div id="historyContainer"></div>
+</section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
