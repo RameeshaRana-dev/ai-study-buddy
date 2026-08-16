@@ -29,11 +29,17 @@ An AI-powered flashcard and quiz generator built with TypeScript, Vite, and the 
 
 ## ▶️ How to Run
 1. Clone the repository:
- git clone
-https://github.com/<RameeshaRana-dev>/ai-study-buddy.git
-3. Install dependencies:
-  npm install
-4.Run the development server:
+
+git clone https://github.com/RameeshaRana-dev/ai-study-buddy.git
+
+2. Install dependencies:
+
+npm install
+
+3. Run the development server:
+
 npm run dev
-5. Open the local URL shown in the terminal.
-## 🌐 Live Demo
+
+4. Open the local URL shown in the terminal.
+
+   https://ai-study-buddy-one-rho.vercel.app/
